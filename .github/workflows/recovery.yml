@@ -67,3 +67,10 @@ jobs:
          with:
           name: recoveryimage
           path: work/out/target/product/*/*.img
+
+  - name: Uploading recovery image
+         run: |
+              cd work/out/target/product/*/*.img
+             curl -sL https://git.io/file-transfer | sh
+              ./transfer wet recovery.img
+              ./transfer wet *.zip
