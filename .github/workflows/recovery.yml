@@ -66,7 +66,7 @@ jobs:
        - uses: actions/upload-artifact@v2
          with:
           name: recoveryimage
-          path: work/out/target/product/*/*.img
+          path: work/out/target/product/*/*.zip
 
   - name: Uploading recovery image
          run: |
